@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #002b9b;
+}
+
+.audio-table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 900px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.audio-table th, .audio-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.audio-table th {
+  background-color: #333;
+  color: white;
+}
+
+.cover {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+audio {
+  width: 350px;     
+  height: 35px;     
+  border-radius: 20px;
+}
+
+a {
+  color: #0056ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #003399;
+  text-decoration: underline;
+}
