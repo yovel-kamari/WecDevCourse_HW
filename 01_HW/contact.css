@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #002b9b;
+}
+
+.contact-table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-table td,
+.contact-table th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.contact-table th.title {
+  text-align: center;
+  font-size: 18px;
+  background-color: #f0f0f0;
+}
+
+.contact-table input,
+.contact-table textarea {
+  width: 95%;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.contact-table textarea {
+  resize: vertical;
+  height: 70px;
+}
+
+.contact-table .center {
+  text-align: center;
+}
+
+button {
+  background-color: #2f5ee9;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #002b9b;
+}

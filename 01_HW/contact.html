@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Contact</h1>
+
+    <table class="contact-table">
+      <tr>
+        <th colspan="2" class="title">Send a Message</th>
+      </tr>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" id="name" placeholder="Enter your name"></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" id="email" placeholder="Enter your email"></td>
+      </tr>
+      <tr>
+        <td>Phone:</td>
+        <td><input type="tel" id="phone" placeholder="Enter your phone number"></td>
+      </tr>
+      <tr>
+        <td>Subject:</td>
+        <td><input type="text" id="subject" placeholder="Subject"></td>
+      </tr>
+      <tr>
+        <td>Message:</td>
+        <td><textarea id="message" placeholder="Type your message here..."></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="center">
+          <button type="button" onclick="sendMessage()">Send Message</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    function sendMessage() {
+      // הצגת הודעה
+      alert("Message sent successfully!");
+
+      // הדפסת DEBUG לקונסול
+      console.log("DEBUG: Message button clicked");
+    }
+  </script>
+</body>
+</html>
