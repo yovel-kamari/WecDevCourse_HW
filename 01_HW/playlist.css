@@ -1,13 +1,14 @@
 :root {
-  --bg: #f6f7fb;
-  --card: #ffffff;
+  --bg: #2f5ee9;
+  --card: #2f5ee9;
   --primary: #2f5ee9;
   --primary-2: #5681ff;
-  --text: #1f2430;
-  --muted: #6b7280;
+  --text: #ffffff;
+  --muted: #e0e0e0;
   --radius: 12px;
 }
 
+/* עיצוב כללי */
 body {
   margin: 0;
   background: var(--bg);
@@ -22,19 +23,27 @@ body {
   padding: 0 16px;
 }
 
+/* כותרת */
 h1 {
   margin: 0 0 20px;
   font-weight: 700;
-  text-align: center;
-  color: #000000; 
+  color: #002b9b;
   font-size: 28px;
+  border: 3px solid black;
+  padding: 10px 24px;
+  border-radius: 8px;
+  background-color: #2f5ee9;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-
+/* טבלה */
 .table-wrap {
   overflow-x: auto;
   border-radius: var(--radius);
-  box-shadow: 0 8px 24px rgba(22, 34, 66, 0.06);
+  box-shadow: 0 8px 24px rgba(22, 34, 66, 0.15);
 }
 
 .table {
@@ -45,11 +54,12 @@ h1 {
   border: 2px solid var(--primary-2);
   border-radius: var(--radius);
   overflow: hidden;
+  color: var(--text);
 }
 
 thead th {
-  background: linear-gradient(0deg, var(--primary-2), var(--primary));
-  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
   padding: 12px 14px;
   text-align: left;
   font-weight: 700;
@@ -59,12 +69,13 @@ thead th {
 tbody td {
   padding: 16px 14px;
   vertical-align: middle;
-  border-top: 1px solid #e6e8ee;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 15px;
+  color: #ffffff;
 }
 
 tbody tr:hover {
-  background: #f0f4ff;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .video {
@@ -72,5 +83,26 @@ tbody tr:hover {
   height: 135px;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
+
+/* 🔹 שלב 13 - Class רקע כחול וטקסט לבן */
+.blueTheme {
+  background-color: #0048cc;
+  color: #ffffff;
+}
+
+/* 🔹 שלב 14 - Class לשורה עם סימון */
+.highlightRow {
+  background-color: #6ca6ff; /* רקע תכלת בהיר */
+}
+
+/* שינוי צבע לטקסט בתוך תאים של השורה המסומנת */
+.highlightRow td {
+  color: #001a66 !important; /* כחול כהה אמיתי */
+  font-size: 20px;   
+  font-weight: 900;          /* טקסט מודגש */
+
+}
+
+
