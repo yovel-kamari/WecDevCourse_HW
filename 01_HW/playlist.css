@@ -86,23 +86,28 @@ tbody tr:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* 🔹 שלב 13 - Class רקע כחול וטקסט לבן */
-.blueTheme {
-  background-color: #0048cc;
-  color: #ffffff;
-}
-
-/* 🔹 שלב 14 - Class לשורה עם סימון */
+/* 🔹 שורה מסומנת */
 .highlightRow {
-  background-color: #6ca6ff; /* רקע תכלת בהיר */
+  background-color: #6ca6ff;
 }
 
-/* שינוי צבע לטקסט בתוך תאים של השורה המסומנת */
 .highlightRow td {
-  color: #001a66 !important; /* כחול כהה אמיתי */
-  font-size: 20px;   
-  font-weight: 900;          /* טקסט מודגש */
-
+  color: #001a66 !important;
+  font-size: 20px;
+  font-weight: 900;
 }
 
+/* 🎵 עיצוב קישורי שירים */
+.songLink {
+  color: #001a66;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
 
+.songLink:hover {
+  color: #a8c8ff;
+  text-decoration: underline;
+  transform: scale(1.05); /* אפקט קל של הגדלה */
+}
