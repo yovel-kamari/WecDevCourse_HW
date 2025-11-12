@@ -7,47 +7,35 @@
   <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Contact</h1>
 
-    <table class="contact-table">
-      <tr>
-        <th colspan="2" class="title">Send a Message</th>
-      </tr>
-      <tr>
-        <td>Name:</td>
-        <td><input type="text" id="name" placeholder="Enter your name"></td>
-      </tr>
-      <tr>
-        <td>Email:</td>
-        <td><input type="email" id="email" placeholder="Enter your email"></td>
-      </tr>
-      <tr>
-        <td>Phone:</td>
-        <td><input type="tel" id="phone" placeholder="Enter your phone number"></td>
-      </tr>
-      <tr>
-        <td>Subject:</td>
-        <td><input type="text" id="subject" placeholder="Subject"></td>
-      </tr>
-      <tr>
-        <td>Message:</td>
-        <td><textarea id="message" placeholder="Type your message here..."></textarea></td>
-      </tr>
-      <tr>
-        <td colspan="2" class="center">
-          <button type="button" onclick="sendMessage()">Send Message</button>
-        </td>
-      </tr>
-    </table>
+  <!-- ✅ תפריט ניווט בראש העמוד -->
+  <div class="top-nav">
+    <a href="playlist.html">🎵 פלייליסט</a> |
+    <a href="audioList.html">🎧 רשימת אודיו</a> |
+    <a href="contact.html">📩 צור קשר</a> |
+    <a href="tags.html">🏷️ דף התגים</a> |
+    <a href="summary.html">📊 דף הסיכום</a>
   </div>
+
+  <!-- ✅ עוטף רק את תוכן העמוד המקורי -->
+  <main>
+    <div class="container">
+      <h1>Contact</h1>
+      <table class="contact-table">
+        <tr><th colspan="2" class="title">Send a Message</th></tr>
+        <tr><td>Name:</td><td><input type="text" id="name" placeholder="Enter your name"></td></tr>
+        <tr><td>Email:</td><td><input type="email" id="email" placeholder="Enter your email"></td></tr>
+        <tr><td>Phone:</td><td><input type="tel" id="phone" placeholder="Enter your phone number"></td></tr>
+        <tr><td>Subject:</td><td><input type="text" id="subject" placeholder="Subject"></td></tr>
+        <tr><td>Message:</td><td><textarea id="message" placeholder="Type your message here..."></textarea></td></tr>
+        <tr><td colspan="2" class="center"><button type="button" onclick="sendMessage()">Send Message</button></td></tr>
+      </table>
+    </div>
+  </main>
 
   <script>
     function sendMessage() {
-      // הצגת הודעה
       alert("Message sent successfully!");
-
-      // הדפסת DEBUG לקונסול
       console.log("DEBUG: Message button clicked");
     }
   </script>

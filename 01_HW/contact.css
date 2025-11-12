@@ -1,10 +1,31 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f7fa;
+  margin: 0;
+}
+
+/* ניווט עליון */
+.top-nav {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.top-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.top-nav a:hover {
+  color: #2f5ee9;
+}
+
+/* עוטף רק את החלק המרכזי */
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 120px); /* כך שהטופס נשאר באמצע, והניווט נשאר למעלה */
 }
 
 .container {

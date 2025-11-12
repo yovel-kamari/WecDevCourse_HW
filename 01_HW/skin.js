@@ -1,8 +1,12 @@
 // skin.js
 // Cycle through CSS skins on each button click
 
-// List of available CSS files to cycle
-const skins = ["basic.css", "modern.css", "dark.css"];
+// List of available CSS files in SKINS folder
+const skins = [
+  "SKINS/basic.css",
+  "SKINS/modern.css",
+  "SKINS/dark.css"
+];
 
 // Restore last selection if exists
 const saved = localStorage.getItem("skinIndex");
@@ -10,10 +14,8 @@ let i = saved ? parseInt(saved, 10) : 0;
 
 // Apply current skin
 function applySkin() {
-  // Find <link id="skin"> and update href
   const link = document.getElementById("skin");
   if (link) link.href = skins[i];
-  // Persist selection
   localStorage.setItem("skinIndex", i);
 }
 
@@ -26,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!btn) return;
 
   btn.addEventListener("click", () => {
-    i = (i + 1) % skins.length; // next skin, loop back to first
-    applySkin();                // switch stylesheet
+    i = (i + 1) % skins.length; // Move to next skin
+    applySkin();                // Switch stylesheet
   });
 });
